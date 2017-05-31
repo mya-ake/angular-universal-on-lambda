@@ -1,5 +1,5 @@
 # Angular Universal on AWS Lambda
-Angular Universal を AWS Lambda で動かすリポジトリの予定地
+Angular Universal を AWS Lambda で動かすコードを置くリポジトリの予定地
 
 ## About
 
