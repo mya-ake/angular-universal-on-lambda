@@ -3,12 +3,14 @@ Angular Universal を AWS Lambda で動かすコードを置くリポジトリ�
 
 ## About
 
-今のところ公式の[Angular Universal - ts - GUIDE](https://angular.io/docs/ts/latest/guide/universal.html)のページのものを Angular CLI の `ng new` から作った状態。
-（AOT と Universal が動く状態）
+今のところ公式の[Angular Universal - ts - GUIDE](https://angular.io/docs/ts/latest/guide/universal.html)のページのものを Angular CLI の `ng new` から作り、Lambdaで動かせる状態。
 
-これから、AWS Lambda で動かせるように作っていく。
+ただし、API Gateway のステージが URL に含まれるため、パスを調整する必用があるため、まだまだ調整が必要である。
 
-AWS Lmabda へのデプロイは [Serverless Framework](https://serverless.com/) を使う予定。
+
+AWS Lmabda へのデプロイは [Serverless Framework](https://serverless.com/) を利用している。
+
+
 
 ## Angular Version
 
