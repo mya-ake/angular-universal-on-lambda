@@ -11,6 +11,7 @@
     "**/*.spec.ts",
     "**/*-aot.ts",
     "uni/**",
+    "cli_uni/**",
     "lambda/**"
   ]
 }

@@ -17,7 +17,9 @@
     "deploy:lambda": "sls deploy",
     "remove:lambda": "sls remove",
     "build:cli:aot": "ng build --aot --prod",
-    "serve:cli:aot": "lite-server -c=bs-config.cli.aot.js"
+    "serve:cli:aot": "lite-server -c=bs-config.cli.aot.js",
+    "build:cli:uni": "webpack --config webpack.config.cli.uni.js",
+    "serve:cli:uni": "node dist_universal/server.js"
   },
   "private": true,
   "dependencies": {
