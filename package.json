@@ -15,7 +15,9 @@
     "serve:uni": "node src/dist/server.js",
     "build:lambda": "webpack --config webpack.config.lambda.js",
     "deploy:lambda": "sls deploy",
-    "remove:lambda": "sls remove"
+    "remove:lambda": "sls remove",
+    "build:cli:aot": "ng build --aot --prod",
+    "serve:cli:aot": "lite-server -c=bs-config.cli.aot.js"
   },
   "private": true,
   "dependencies": {
@@ -58,6 +60,7 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
     "typescript": "~2.2.0",
-    "webpack": "^2.6.1"
+    "webpack": "^2.6.1",
+    "webpack-merge": "^4.1.0"
   }
 }
