@@ -13,13 +13,13 @@
     "serve:aot": "lite-server -c=bs-config.aot.js",
     "build:uni": "webpack --config webpack.config.uni.js",
     "serve:uni": "node src/dist/server.js",
-    "build:lambda": "webpack --config webpack.config.lambda.js",
-    "deploy:lambda": "sls deploy",
-    "remove:lambda": "sls remove",
-    "build:cli:aot": "ng build --aot --prod",
+    "build:cli:aot": "ng build --aot --prod -bh /v1/",
     "serve:cli:aot": "lite-server -c=bs-config.cli.aot.js",
     "build:cli:uni": "webpack --config webpack.config.cli.uni.js",
-    "serve:cli:uni": "node dist_universal/server.js"
+    "serve:cli:uni": "node dist_universal/server.js",
+    "build:lambda": "webpack --config webpack.config.lambda.js",
+    "deploy:lambda": "sls deploy",
+    "remove:lambda": "sls remove"
   },
   "private": true,
   "dependencies": {

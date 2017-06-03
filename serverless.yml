@@ -10,14 +10,8 @@ provider:
 
 package:
   include:
-    - lambda.js
-    - node_modules/core-js/client/shim.min.js
-    - node_modules/zone.js/dist/zone.min.js
-    - src/favicon.ico
-    - src/index-lambda.html
-    - src/styles.css
-    - src/dist/build.js
-    - src/dist/lambda.js
+    - dist_lambda/lambda.js
+    - dist/**
   exclude:
     - node_modules/**
     - src/**
@@ -30,17 +24,21 @@ package:
     - protractor.conf.js
     - LICENSE
     - README.md
-    - bs-config.aot.js
+    - dist**/**
+    - bs-config**.js
     - tslint.json
     - tsconfig**.json
     - webpack.**.js
 
 functions:
   handler:
-    handler: lambda.handler
+    handler: dist_lambda/lambda.handler
     timeout: 120
     memorySize: 128
     events:
+      - http:
+          path: '/'
+          method: get
       - http:
           path: '{proxy+}'
           method: get

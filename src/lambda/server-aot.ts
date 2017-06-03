@@ -17,18 +17,18 @@ server.engine('html', ngUniversalEngine({
 }));
 
 // set default view directory
-server.set('views', 'src');
+server.set('views', 'dist');
 
 // handle requests for routes in the app.  ngExpressEngine does the rendering.
 server.get(['/', '/dashboard', '/heroes', '/detail/:id'], (req: express.Request, res: express.Response) => {
-    res.render('index-lambda.html', { req });
+    res.render('index.html', { req });
 });
 
 // handle requests for static files
 server.get(['/*.js', '/*.css', '/*.ico'], (req: express.Request, res: express.Response, next: express.NextFunction) => {
     const fileName: string = req.originalUrl;
     console.log(fileName);
-    const root = fileName.startsWith('/node_modules/') ? '.' : 'src';
+    const root = fileName.startsWith('/node_modules/') ? '.' : 'dist';
     res.sendFile(fileName, { root: root }, (err: any) => {
         if (err) {
             next(err);
