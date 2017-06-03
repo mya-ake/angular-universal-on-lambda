@@ -13,7 +13,7 @@
     "serve:aot": "lite-server -c=bs-config.aot.js",
     "build:uni": "webpack --config webpack.config.aot.js & webpack --config webpack.config.uni.js",
     "serve:uni": "node src/dist/server.js",
-    "build:cli:aot": "ng build --aot --prod -bh /v1/",
+    "build:cli:aot": "ng build --aot --prod",
     "serve:cli:aot": "lite-server -c=bs-config.cli.aot.js",
     "build:cli:uni": "ng build --aot --prod & webpack --config webpack.config.cli.uni.js",
     "serve:cli:uni": "node dist_universal/server.js",
