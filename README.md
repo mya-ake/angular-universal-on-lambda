@@ -12,7 +12,7 @@ Angular Universal を AWS Lambda で動かすコードを置いているリポ�
 
 Angular CLI の機能を使うものはコマンドに `:cli` が含まれる。（LambdaのコマンドはCLI使っているがコマンドに `:cli` は入っていない）
 
-※公式の Universal ページにあるものは Angular CLI を使わないコマンドになっている。
+公式の Universal ページにあるものは Angular CLI を使わないコマンドになっている。
 
 
 ### Lambda へのデプロイ
