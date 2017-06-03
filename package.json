@@ -17,7 +17,8 @@
     "serve:cli:aot": "lite-server -c=bs-config.cli.aot.js",
     "build:cli:uni": "ng build --aot --prod & webpack --config webpack.config.cli.uni.js",
     "serve:cli:uni": "node dist_universal/server.js",
-    "build:lambda": "ng build --aot --prod -bh /v1/　& webpack --config webpack.config.lambda.js",
+    "build:lambda": "ng build --aot --prod & webpack --config webpack.config.lambda.js",
+    "build:lambda:api_gw": "ng build --aot --prod -bh /dev/ & webpack --config webpack.config.lambda.js",
     "deploy:lambda": "sls deploy",
     "remove:lambda": "sls remove"
   },
