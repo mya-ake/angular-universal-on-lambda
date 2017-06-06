@@ -1,4 +1,3 @@
-// import * as awsServerlessExpress from 'aws-serverless-express';
 import app from './server-aot';
 const awsServerlessExpress: any = require('aws-serverless-express');
 
