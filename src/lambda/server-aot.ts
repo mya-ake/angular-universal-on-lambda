@@ -3,7 +3,6 @@ import { enableProdMode } from '@angular/core';
 import { AppServerModuleNgFactory } from '../../aot/src/lambda/app.server.ngfactory';
 import * as express from 'express';
 import { ngUniversalEngine } from './universal-engine';
-// import * as awsServerlessExpressMiddleware from 'aws-serverless-express/middleware';
 const awsServerlessExpressMiddleware: any = require('aws-serverless-express/middleware');
 
 enableProdMode();
