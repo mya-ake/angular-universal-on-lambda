@@ -29,5 +29,5 @@ $ yarn deploy:lambda
 
 ## Angular Version
 
-v4.0.0
+v4.2.4
 
